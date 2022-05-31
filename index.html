@@ -1,0 +1,147 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Zadanie_3</title>
+		<!-- Адаптив -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Кодировка страницы -->
+		<meta charset="UTF-8">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<script src="script/first_part.js"></script>
+	<script src="script/second_part.js"></script>
+	<!-- Подключаю скрипты -->
+	<body>
+			<div class="welcome">
+	<div id="welcome"></div>
+		<script>
+			const name = prompt('Пожалуйста, представьтесь!');
+			if (name) {
+  			document.querySelector('#welcome').innerHTML = `<b>${name}</b>, добро пожаловать на сайт!`;
+  			}
+ 			else {
+ 			document.querySelector('#welcome').innerHTML = '<b>Гость</b>, добро пожаловать на сайт!';
+			}
+			</script>
+	</div>
+		<div class="wrapper">
+			<div class="content">
+				<div class="hi">
+					<div class='container'>
+						<div class="hi__row">
+							<div class="hi__body">
+								<div class="hi__title">Как работает JavaScript</div>
+								<ul class="hi__list">
+									<li>Пользователь что-то сделал на странице</li>
+									<li>В браузере сработало событие</li>
+									<li>Запустился JavaScript-код, который назначен на событие</li>
+									<li>JavaScript изменил что-то на странице</li>
+								</ul>
+							</div>
+							<div class="hi__image">
+								<img src="img/image.jpg" alt="" width="750" height="400">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="what">
+					<div class='container'>
+						<div class="what__row">
+							<div class="what__image">
+								<img src="img/image_2.jpg" alt=""  width="400" height="300">
+							</div>
+							<div class="what__body">
+								<div class="what__title title ">Что такое JavaScript?</div>
+								<div class="what__text">
+									<p>JavaScript - это язык, который позволяет вам применять сложные вещи на web странице — каждый раз, когда на web странице происходит что-то большее, чем просто её статичное отображение — отображение периодически обновляемого контента, или интерактивных карт, или анимация 2D/3D графики.
+									</p>
+									<p>Можете быть уверены, что скорее всего, не обошлось без JavaScript. Это третий слой слоёного пирога стандартных web технологий, два из которых (HTML и CSS).</p>
+								</div>
+							</div>
+						</div>
+
+				<div class="example">
+						<div class="example_work">
+							<p>Демонстрация решения задач при помощи языка JavaScript</p>
+								<div class="example_work_text">
+									<p>Нажмите на любую кнопку:</p>
+										<div class="example_buttons">
+											<a class="button1" href="#" onClick="firstTask()">Выбор погоды </a>
+											<a class="button2" href="#" onClick="thirdTask()">Вирусная кнопка </a>
+											<a class="button3" href="#" onClick="task9()">Текущая дата </a>
+											<a class="button4" href="#" onClick="task11()">Счетчик </a>
+										</div>
+										</div>
+								</div>
+						</div>
+				</div>
+
+				<div class="testjs">
+					<div class=test_text>
+						<p>Выполните задания теста:</p>
+						<br>
+								<p>1. За что отвечает оператор typeof <input type="text" id="z_1"></p>
+								<br>
+								<p>2. Переменные, объявленные с помощью ключевого слова "...", имеют блочную область видимости. <br>Это значит, что они недоступны снаружи блока {...} = <input type="text" id="z_2"></p>
+								<br>
+								<p>3. Как создать объект?<input type="text" id="z_3"></p>
+								<br>
+								<p>4. Что такое лямбда- или стрелочные функции?<input type="text" id="z_4"></p>
+								<br>
+								<p>5. Что такое функция первого порядка? <input type="text" id="z_5"></p>
+								<br>
+								<p>6. Что такое унарная функция? <input type="text" id="z_6"></p>
+								<br>
+								<p>7. Что такое модуль? <input type="text" id="z_7"></p>
+								<br>
+								<p>8. Что такое область видимости? <input type="text" id="z_8"></p>
+								<br>
+								<p>9. Что такое индексированная база данных (IndexedDB)? <input type="text" id="z_9"></p>
+								<br>
+								<p>10. Что такое куки (cookie)? <input type="text" id="z_10"></p>
+								<br>
+							<button onclick="proverit();">Проверить</button>
+							<div id="rezultat"></div>
+							<script>
+							function proverit(){
+							pr_otv_zadachi_1 = Получает некоторое значение и определяет его тип;
+							pr_otv_zadachi_2 = let;
+							pr_otv_zadachi_3 = const object = new Object();
+							pr_otv_zadachi_4 = Сокращенный способ записи функциональных выражений;
+							pr_otv_zadachi_5 = const firstOrder = () => console.log('Я - функция первого порядка');
+							pr_otv_zadachi_6 = Функция, принимающая только один аргумент;
+							pr_otv_zadachi_7 = Небольшие части независимого переиспользуемого кода, лежащие в основе многих шаблонов проектирования;
+							pr_otv_zadachi_8 = Видимость переменных и других ресурсов в текущем контексте выполнения кода;
+							pr_otv_zadachi_9 = Низкоуровневый прикладной интерфейс для хранения большого объема структурированных данных;
+							pr_otv_zadachi_10= Небольшой фрагмент данных, который сохраняется на компьютере пользователя для последующего использования браузером;
+							otv_uch_1 = document.getElementById('z_1').value;
+							otv_uch_2 = document.getElementById('z_2').value;
+							otv_uch_3 = document.getElementById('z_3').value;
+							otv_uch_4 = document.getElementById('z_4').value;
+							otv_uch_5 = document.getElementById('z_5').value;
+							otv_uch_6 = document.getElementById('z_6').value;
+							otv_uch_7 = document.getElementById('z_7').value;
+							otv_uch_8 = document.getElementById('z_8').value;
+							otv_uch_9 = document.getElementById('z_9').value;
+							otv_uch_10 = document.getElementById('z_10').value;
+							ball = 0;
+							if(otv_uch_1 == pr_otv_zadachi_1){
+							}
+							ball +=1;
+							}
+							ball +=1;
+							vsego_zadach = 10;
+							document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+							</script>
+					</div>
+				</div>
+
+				<div class="button_image">
+					<a class="button5" href="img/button_image.jpg" target="_blank">Открыть изображение</a>
+				</div>
